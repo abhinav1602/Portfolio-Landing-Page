@@ -1,0 +1,290 @@
+*{
+	font-family: 'Rationale','Gloria Hallelujah','Montserrat', sans-serif;
+  color:white;
+  max-height:100%;
+}
+body{
+  max-height: 100%;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 998;
+  background-color: rgba(0,0,0,0.1);
+ }
+
+h6,p{
+  font-family:'Rationale','Gloria Hallelujah','Montserrat', sans-serif;
+}
+
+#mycard{
+  position:absolute;
+  margin-top: 0px;
+  z-index: 999;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  border: 1px solid gray;
+}
+
+#card_body{
+position: relative;
+width: 100%;
+}
+
+#card_body ul{
+  position: relative;
+  float: right;
+  width: 100%;
+}
+
+.skills{
+  margin-bottom: 0;
+}
+
+.skills li{
+  display: inline-block;
+  position: relative;
+  float: center;
+  margin-left: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0.5px solid gray;
+  font-family:'Rationale','Gloria Hallelujah','Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.sc{
+  background-color: rgba(0,0,0,0.4); 
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-bottom: 4px;
+}
+
+.profiles{
+  margin-bottom: 4px;
+}
+
+.profiles ul{
+position: relative;
+width: 50%;
+margin-top: 2px;
+}
+
+.profiles ul li{
+  position: relative;
+  float: center;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+
+.profiles img{
+  height: 24px;
+  width: 24px;
+}
+
+.profiles ul:nth-child(4) span a img{
+-webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+     -o-transform: scale(1.2);
+        transform: scale(1.2);
+}
+  
+/* Scroll Down Botton */
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+}
+
+section::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+
+.demo a {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.demo a:hover {
+  opacity: .5;
+}
+
+#section03 a {
+  padding-top: 60px;
+}
+
+#section03 a span {
+  position: absolute;
+  top: 20;
+  left: 45%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Scroll Down Botton Ends here */
+
+
+#front{
+  position: absolute;
+  width:100%;
+  max-height: 100%;
+  background:url(1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+@media only screen and (max-width: 1160px) and (max-height: 600px) { {
+#mycard{
+  position: absolute;
+  margin-top: -10px;
+}  
+
+} 
+
+
+
+footer{	
+position: fixed;
+margin-bottom: 0px;
+width: 100%;
+z-index: 1;
+}
+
+.page-footer{
+position: relative;
+background: teal;
+margin-bottom: 0px;	
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../icons/myfont.woff2) format('woff2'),
+        url(../icons/myfont.woff) format('woff'),
+        url(../icons/myfont.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*Custom Scroll Bar*/
+body::-webkit-scrollbar{
+  width:10px;
+  background-color:white;
+  }
+  body::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-color:red;
+  }
